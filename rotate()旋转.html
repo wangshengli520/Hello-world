@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>rotate旋转</title>
+<style type="text/css">
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.box{
+  margin: 100px auto;
+  width: 300px;
+  height: 200px;
+  border: 2px dotted blue;
+}
+.box div{
+  width: 300px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  background: green;
+  color: #fff;
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform:rotate(-20deg);
+}
+.box span {
+ display:block;
+ -webkit-transform: rotate(20deg);
+ -moz-transform: rotate(20deg);
+ -ms-transform: rotate(20deg);
+  transform:rotate(20deg);
+ }
+ /*
+ 旋转rotate()函数通过指定的角度参数使元素相对原点进行旋转。它主要在二维空间内进行操作，设置一个角度值，用来指定旋转的幅度。如果这个值为正值，元素相对原点中心顺时针旋转；如果这个值为负值，元素相对原点中心逆时针旋转。
+  */
+</style>
+</head> 
+<body>
+<div class="box">
+ 	<div>
+ 		<span>我不想旋转(^_^)</span>
+ 	</div>
+</div>
+</body>
+</html>
